@@ -1,0 +1,8 @@
+
+<%= image_tag(@post.image.url()) %>
+<br>
+<%= @post.description %> 
+<br>
+<%= link_to 'Edit', edit_post_path(@post) %>
+<%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?'} %>
+<br> 		
